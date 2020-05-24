@@ -19,6 +19,16 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+#root {
+  width: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+  #root {
+    width: 70%;
+  }
+}
+
 .container {
   margin: 30px auto;
   width: 350px;
@@ -109,6 +119,9 @@ input[type='number'] {
   list-style-type: none;
   padding: 0;
   margin-bottom: 40px;
+  height: 186px;
+  overflow-y: auto;
+  padding: 25px;
 }
 
 .list li {
@@ -148,4 +161,27 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cecdcd; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a09e9e; 
 }
