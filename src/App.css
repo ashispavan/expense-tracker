@@ -20,7 +20,7 @@ body {
 }
 
 #root {
-  width: 25%;
+  width: 70%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -184,4 +184,19 @@ input[type='number'] {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #a09e9e; 
+}
+
+.app-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.expense-section {
+  /* flex: 50%; */
+  width: 35%;
+}
+
+.summary-section {
+  /* flex: 50%; */
+  width: 35%;
 }

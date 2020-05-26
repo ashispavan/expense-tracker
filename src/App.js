@@ -6,16 +6,26 @@ import IncomeExpenses from './components/IncomeExpenses';
 import TransactionList from './components/TransactionList';
 import AddTransaction from './components/AddTransaction';
 import { GlobalProvider } from './context/GlobalState';
+import SummaryChart from './components/SummaryChart';
 
 
 function App() {
   return (
     <GlobalProvider>
      <Header />
-     <Balance />
-     <IncomeExpenses />
-     <TransactionList />
-     <AddTransaction />
+     <div className="app-container">
+     <section className='expense-section'>
+      <Balance />
+      <IncomeExpenses />
+      <TransactionList />
+      <AddTransaction />
+     </section>
+     <section className='summary-section'>
+      <SummaryChart />
+     </section>
+     </div>
+
+
     </GlobalProvider>
   );
 }
