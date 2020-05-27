@@ -34,6 +34,7 @@ function AddTransaction() {
 					<option value="Longos">Longos</option>
 					<option value="Hydro">Hydro</option>
 					<option value="Dollarama">Dollarama</option>
+					<option value="ApniRoots">Apni Roots</option>
 					<option value="Rogers">Rogers</option>
 					<option value="FineIndiaGroceries">Fine India Groceries</option>
 					<option value="Eggsmart">Eggsmart</option>
@@ -48,8 +49,7 @@ function AddTransaction() {
 			<div className="form-control">
 				<label htmlFor="amount"
 					>Amount <br />
-					(negative - expense, positive - income)</label
-				>
+				</label>
 				<input type="number" id="amount" onChange={(e) => setAmount(e.target.value)}  value={amount} placeholder="Enter amount..." />
 			</div>
 			<button className="btn">Add transaction</button>

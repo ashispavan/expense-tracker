@@ -23,11 +23,7 @@ body {
   width: 70%;
 }
 
-@media screen and (max-width: 1000px) {
-  #root {
-    width: 70%;
-  }
-}
+
 
 .container {
   margin: 30px auto;
@@ -198,5 +194,32 @@ input[type='number'] {
 
 .summary-section {
   /* flex: 50%; */
-  width: 35%;
+  width: 45%;
+}
+
+select {
+  height: 30px;
+}
+
+.header {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: -50px;
+}
+
+@media screen and (max-width: 600px) {
+
+  .app-container {
+    flex-direction: column;
+  }
+  .expense-section {
+    /* flex: 50%; */
+    width: 90%;
+  }
+  .summary-section {
+    /* flex: 50%; */
+    width: 90%;
+  }
+
 }
